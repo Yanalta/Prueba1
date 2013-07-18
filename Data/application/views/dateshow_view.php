@@ -16,19 +16,19 @@
   <ul>
 
 		<li><label for="id">ID:</label>
-		<a href="<?php echo $row->id;?> </li>
+		<?php echo $row->id;?> </li>
 		
 		<li><label for="titulo">Titulo:</label> 
-		<a href="<?php echo $row->titulo;?> </li>
+		<?php echo $row->titulo;?> </li>
 		
 		<li> <label for="descripcion">Descripcion:</label> 
-		<a href="<?php echo $row->descripcion;?> </li>
+		<?php echo $row->descripcion;?> </li>
 		
 		<li> <label for="fecha">Fecha: </label>
-		<a href="<?php echo $row->fecha;?> </li>
+		<?php echo $row->fecha;?> </li>
 		
 		<li> <label for="boleano">Activo:</label>
-		<a href="<?php echo $row->boleano;?> </li>
+		<?php echo $row->boleano;?> </li>
 	</ul>	
  <?php }?>
  
