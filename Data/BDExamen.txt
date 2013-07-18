@@ -1,0 +1,48 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               5.6.12-log - MySQL Community Server (GPL)
+-- Server OS:                    Win32
+-- HeidiSQL version:             7.0.0.4053
+-- Date/time:                    2013-07-18 13:55:54
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET FOREIGN_KEY_CHECKS=0 */;
+
+-- Dumping database structure for examen
+DROP DATABASE IF EXISTS `examen`;
+CREATE DATABASE IF NOT EXISTS `examen` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `examen`;
+
+
+-- Dumping structure for table examen.contenido
+DROP TABLE IF EXISTS `contenido`;
+CREATE TABLE IF NOT EXISTS `contenido` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(255) NOT NULL,
+  `descripcion` varchar(255) NOT NULL,
+  `fecha` date NOT NULL,
+  `boleano` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1 COMMENT='Tabla del contenido de titulos';
+
+-- Dumping data for table examen.contenido: ~13 rows (approximately)
+/*!40000 ALTER TABLE `contenido` DISABLE KEYS */;
+INSERT INTO `contenido` (`id`, `titulo`, `descripcion`, `fecha`, `boleano`) VALUES
+	(1, 'Leyendas', 'Leyendas Mexicanas', '0000-00-00', 1),
+	(2, 'Cuentos', 'Cuentos antes de dormir', '0000-00-00', 1),
+	(3, 'Banamex', 'Banco Nacional', '1989-03-07', 0),
+	(4, 'Agua', 'liquido', '2010-01-01', 0),
+	(5, 'Agua', 'liquido', '2010-01-01', 0),
+	(6, 'Agua', 'liquido', '2010-01-01', 0),
+	(7, 'Agua', 'liquido', '2010-01-01', 0),
+	(8, 'Leche', 'blanca', '2009-02-01', 0),
+	(9, 'Leche', 'blanca', '2009-02-01', 0),
+	(10, 'Calendario', 'conteo de dias', '2009-03-03', 0),
+	(11, 'Calendario', 'conteo de dias', '2009-03-03', 0),
+	(12, 'goma', 'goma', '2011-01-03', 0),
+	(13, 'goma', 'goma', '2011-01-03', 0);
+/*!40000 ALTER TABLE `contenido` ENABLE KEYS */;
+/*!40014 SET FOREIGN_KEY_CHECKS=1 */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
